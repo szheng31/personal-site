@@ -1,3 +1,4 @@
+"use client"
 import VinylImage from "../components/VinylImage";
 import bridgingseas from "../imgs/bridgingseas.png"
 import vanderbilt from "../imgs/Dimensional V.png"
@@ -8,6 +9,16 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import Typography from '@mui/material/Typography';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+
+const theme = createTheme({
+  typography: {
+    allVariants: {
+      fontFamily: 'JetBrainsMono',
+      textTransform: 'none',
+    },
+  },
+});
 
 export default function Education() {
     
@@ -17,6 +28,8 @@ export default function Education() {
             <div>
                 
                 <p className="animate-slide-in sm:text-9xl text-8xl">Education</p>
+                <ThemeProvider theme={theme}>
+
                 <Timeline sx={{
                         [`& .${timelineItemClasses.root}:before`]: {
                             flex: 0,
@@ -138,6 +151,8 @@ export default function Education() {
                         
                         
                     </Timeline>
+                    </ThemeProvider>
+
                 
                 </div>
                 
