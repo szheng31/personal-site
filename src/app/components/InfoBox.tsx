@@ -18,7 +18,7 @@ function InfoBox({name,num,image,link} : {name:string, num:string, image:string,
             
             <div className="pb-5"></div>
             <div className="">
-                <VinylImage  imageSrc={image} link={link}/>
+                <VinylImage  spin={false} imageSrc={image} link={link}/>
             </div>
             
         </div>
