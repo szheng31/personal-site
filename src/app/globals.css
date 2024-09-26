@@ -3,21 +3,29 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #ffffff;
+  --background: #171717;  
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #0a0a0a;
+    --background: #ededed;
   }
+}
+
+@font-face {
+  font-family: 'JetBrainsMono';
+  src: url('./fonts/webfonts/JetBrainsMono-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'JetBrainsMono' , monospace;
+  animation: fadeIn 1s forwards;
 }
 
 @layer utilities {
@@ -25,3 +33,4 @@ body {
     text-wrap: balance;
   }
 }
+
