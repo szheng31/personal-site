@@ -1,6 +1,6 @@
 import VinylImage from "./VinylImage";
 
-function InfoBox({name,num,image,link} : {name:string, num:string, image:string, link:string}) {
+function InfoBox({ name, num, image, link }: { name: string, num: string, image: string, link: string }) {
     return (
         <div className="pb-10 px-3">
 
@@ -15,15 +15,15 @@ function InfoBox({name,num,image,link} : {name:string, num:string, image:string,
                 </span>
             </div>
             <hr className="border-gray-500"></hr>
-            
+
             <div className="pb-5"></div>
             <div className="">
-                <VinylImage  spin={false} imageSrc={image} link={link}/>
+                <VinylImage spin={false} imageSrc={image} link={link} />
             </div>
-            
+
         </div>
     );
-    
+
 }
 
 export default InfoBox;

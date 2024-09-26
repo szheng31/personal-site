@@ -30,7 +30,7 @@ export default function Education() {
   return (
     <div className="grid md:grid-cols-2 md:grid-rows-1 grid-rows-2 pt-3 bg-gradient-to-l from-[#BDA567] to-[#FFFDD0] min-h-screen w-full">
       <div>
-        <p className="animate-slide-in sm:text-9xl text-8xl">Education</p>
+        <p className="animate-slide-in sm:text-9xl text-8xl">Background</p>
 
         <ThemeProvider theme={theme}>
           <Timeline
