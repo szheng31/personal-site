@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-
+import { ViewTransitions } from 'next-view-transitions'
 
 
 export const metadata: Metadata = {

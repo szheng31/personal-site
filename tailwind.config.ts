@@ -14,7 +14,7 @@ const config: Config = {
       },
       keyframes: {
         slidein: {
-          '0%': { transform: 'translateX(-100%)' },
+          '0%': { transform: 'translateX(-200%)' },
           '100%': { transform: 'translateX(0)' },
         },
         slideDown: {
@@ -37,7 +37,7 @@ const config: Config = {
         }
       },
       animation: {
-        'slide-in': 'slidein 2s ease-in-out',
+        'slide-in': 'slidein 1.2s ease-in-out',
         'spin-slow': 'spin 5s linear infinite', // Adjust duration as needed
         'slide-down': 'slideDown 1s ease-in-out forwards',
         'fade-out': 'fadeOut 1s forwards',
